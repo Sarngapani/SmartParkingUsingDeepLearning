@@ -1,6 +1,6 @@
 # SmartParkingUsingDeepLearning
-Abstract. Modern, efficient parking methods are therefore a must within the cities demanding modern infrastructural solutions. To illustrate this, the proposed solution, “Smart Parking using Deep Learning," employs technology of sophisticated object detection. We used YOLO V8, which incidentally is one of the most powerful algorithms out there and has a superb track record when it comes to the speed and efficiency of the detection of objects on images. In this system, we used the Python language, and there are several libraries of Python that are used in this system, as follows: CV2, OpenCV for video processing, Pandas for data operations, and NumPy for performing the numerical calculations. Our technique is an optimally placed camera capturing visuals in real time in a parking lot. Next are the YOLO V8 and OpenCV computation of these pictures and the CV2 to look for open parking spaces. While in the case of Pandas, the data is sorted logically so that space identification is efficient, here computation is fast. The proper structure of the proposed smart parking system should reduce the time used in search of adequate parking bays significantly. This assists in decreasing the flow of traffic in the parking lots. Due to flexibility, this system can be applied in various situations, such as an airport, a shopping mall, and so on. Thus, the idea of our project is that AI can be engaged in urban infrastructure to enhance people’s lives.
-⦁	Introduction
+**Abstract:** Modern, efficient parking methods are therefore a must within the cities demanding modern infrastructural solutions. To illustrate this, the proposed solution, “Smart Parking using Deep Learning," employs technology of sophisticated object detection. We used YOLO V8, which incidentally is one of the most powerful algorithms out there and has a superb track record when it comes to the speed and efficiency of the detection of objects on images. In this system, we used the Python language, and there are several libraries of Python that are used in this system, as follows: CV2, OpenCV for video processing, Pandas for data operations, and NumPy for performing the numerical calculations. Our technique is an optimally placed camera capturing visuals in real time in a parking lot. Next are the YOLO V8 and OpenCV computation of these pictures and the CV2 to look for open parking spaces. While in the case of Pandas, the data is sorted logically so that space identification is efficient, here computation is fast. The proper structure of the proposed smart parking system should reduce the time used in search of adequate parking bays significantly. This assists in decreasing the flow of traffic in the parking lots. Due to flexibility, this system can be applied in various situations, such as an airport, a shopping mall, and so on. Thus, the idea of our project is that AI can be engaged in urban infrastructure to enhance people’s lives.
+⦁	**Introduction**
 ⦁	Introduction to project
 Thus, it is critical to monitor and manage parking on the background of the further growth and development in urban areas. To meet this need we have our project known as Smart Parking, this just enhances the Google maps for parking experience, the program uses object detection to find a parking space. This has prompted the research on improved algorithm and technology to decrease amazingly the time drivers use to look for a parking space. Therefore, the traffic circulation in all the city transport systems operating under Smart Parking will be optimised. 
  
@@ -36,10 +36,7 @@ Open Source Computer Vision Library, often known as OpenCV, is a universal, open
 ⦁	RTSP
 RTSP (Real-Time Streaming Protocol) is a network control protocol which also used for use by the client in controlling the streaming media servers. It enables the important and unimpeded conveyance of physical audio and video information through IP networks. RU As clients, RTSP allows a form of control that is used to control the start and stop of streams among others, while servers allow for the handling of multiple stream requests at an instance. TCP or UDP base but most use port 554 in order to communicate. RTSP is adopted in environments in which real-time streaming is crucial, including surveillance systems, applications used in video conferences, and live streaming platforms. As a result, due to its capacity for negotiating transmission parameters, as well as managing session state, it can be considered as one of the basic protocols for interactive multimedia applications over the Internet.
 
-              
-Fig. 3. RTSP Protocol
-
-⦁	Model Comparision
+⦁	**Model Comparision**
 ⦁	Significant Improvements in the model in comparison with existing models
 ⦁	 Advanced Object Detection Algorithm: 
 ⦁	The proposed model is built with YOLOv8 that is different from some of the previous models developed on YOLOv5 and below.  
@@ -49,8 +46,8 @@ Fig. 3. RTSP Protocol
 ⦁	The COCO dataset is used for fine-tuning of the YOLOv8 models, benchmarking and pretraining. The rich annotations, multiple categories, and, at the same time, simple but reasonable evaluation metrics make it a valuable informational base for the creation of models in computer vision. 
 ⦁	Due to the use of COCO, YOLOv8 is able to obtain very high accuracy and withstand disturbances in object detection tasks while leveraging on the serious research and development effort made on this database.
 
-⦁	 Key Features and Improvements: 
-⦁	 Architecture Enhancements:
+**⦁	 Key Features and Improvements: 
+**⦁	 Architecture Enhancements:
 ⦁	 Improved Backbone and Neck: Improved backbone and neck implementation is part of YOLOv8 to enhance the extraction of features as well as the integration of compound scales in features. Thus, it results in better detection rate for objects of nearly all sizes that could be distinguished not by the limitation of the detecting ability but by the constraint of computational power. 
 ⦁	PANet Integration: Path Aggregation Network (PANet), is applied at the neck to optimize feature concatenation at the multi-scale enhancing object detection on small sized objects.
 ⦁	 Performance 
@@ -61,38 +58,26 @@ Fig. 3. RTSP Protocol
 ⦁	Compatibility: It is intended to be extensible to different frameworks and can run on any stack from cloud servers down to the edge. 
 ⦁	System Architecture
 The figure depicts the system architecture of the proposed smart parking system. It will be used to affect the automatic control of parking spaces in a parking lot. This is done using OpenCV—a rather popular open-source computer vision library—for capturing image data. It then analyzes the captured image to define parking space. To determine if a given parking space contains a vehicle or not, YOLOv8, an object detection model, is utilized. After the detection of these vehicles, the coordinates of each of them is used to check if the parking space is occupied or free. All this information is stored in the system. The system also incorporates a library known as Pickle to store the data. Real-time data stream (RTSP) is used in streaming real-time data over networks. The system can be employed in informing the users of the number of open spaces that are available in the lot. This information can be presented in a website. In general, the system is useful in enhancing efficiency about the management of parking lots due to its abilities in tracking the occupancy of parking spaces.
- 
-Fig. 4. System Architecture
-⦁	
 
-
-⦁	Implementation
+**⦁	Implementation**
 ⦁	 Defining Parking Slots
 The polylines are used to outline the restricted areas and to draw parking slots which delimits the parking zone. Compared to the bounding boxes, polylines enable you to define certain numbers and shapes of parking slots on the video frame. This aids in making the system to know exactly where each parking space is situated.
  
-Fig. 4. After Drawing Polylines
 ⦁	Check Occupancy
 Once the parking slots are defined using polylines, the system can easily determine if there is a car within such region or not. Based on the positions of the cars as identified using the object detection algorithm with the polylines’ coordinates, the system can identify whether the parking slot is free or taken. Occupancy is monitored with the help of computer vision methodologies and deep learning.
  
-Fig. 5. Checking for Parking Spaces
-
 ⦁	Display Slot Status
 The smart parking system provides real-time display and monitoring of available parking spaces using real-time information provided by CCTV cameras. This data is processed and displayed on user interfaces allowing users to find available parking spaces efficiently.
-    
-Fig.6 . Slot Status Information
 
-⦁	Result
+⦁	**Result**
 The last of the smart parking system’s outputs is the web-based application that provides current information on the parking lot. The customers interact with the developed system using a web browser interface. Provides a clear output of the status of parking slots for easy identification by the customers. Attempts to denote the occupancy status of each of the identified parking areas using the two visible colors, red and green. Serves as an efficient means of informing the users within a brief instance about which of the slots are taken and which remain empty.  
 total_slots: It gives the total number of parking slots that are to be provided.  
 filled_slots: Number of slots currently filled by contenders and or placed under usage by the contender.  
 empty_slots: Number of slots available at the given time when the analysis is being made.  
 slot_status: A list of statuses of each parking stand where each stand can either be full (shown in red) or empty (shown in green).     
- 
-Fig.7  Slot Status Indication
-⦁	Conclusion and further improvements
+**⦁	Conclusion and further improvements**
 In conclusion, the developed smart parking project can be considered as useful as it adopts today’s advanced technologies to solve one of the real-world issues, which could be very helpful as a facilitator for controlling the distribution of parking places. It comes with strong operational capabilities and consumer interface; thus, it gives excellent potential for enhancing the motion and parking in the urban areas. 
-⦁	Further Enhancements 
-⦁	 Real-Time Updates :
+**⦁	Further Enhancements **⦁	 Real-Time Updates :
 There should be introduced the ways and means by which the current parking status can be changed with the need to refresh a page.  
 ⦁	 Notification System :
 Messages or notifications need to be provided on the number of slots for the lot, a complete lot, a particular section available is full, etc.  
@@ -101,7 +86,7 @@ To keep the variation of YOLO model at its minimum, Optimize the web server to i
 ⦁	 Security : 
 The web interface together with their data storage and retrieval also requires basic level security for communication and access. 
 These functionalities when incorporated in smart parking project offer an all-round solution when it comes to parking space control and management with computer vision and web technology to offer real time information to the users.
-⦁	References
+**⦁	References**
 1.	Advanced Smart Parking Management System Development Using A; In Hwan Jung, Jae-Moon Lee and Kitae Hwang; School of Computer Engineering Hansung University,Korea; 2022.
 2.	L. Zhang, J. Huang, X. Li and L. Xiong, "Vision-Based Parking-Slot Detection: A DCNN Based Approach and a Large-Scale Benchmark Dataset," in IEEE Transactions on Image Processing, vol. 27, no. 11, pp. 5350-5364, Nov. 2018.
 3.	Chen, Lun-Chi, Ruey-Kai Sheu, Wen-Yi Peng, Jyh-Horng Wu, and Chien-Hao Tseng. 2020. "Video-Based Parking Occupancy Detection for Smart Control System" Applied Sciences 10, no. 3: 1079.
