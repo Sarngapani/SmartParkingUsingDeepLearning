@@ -56,7 +56,7 @@ RTSP (Real-Time Streaming Protocol) is a network control protocol which also use
 ⦁	 Flexibility:  
 ⦁	Support for Multiple Tasks: The exhibits presented here are collected using YOLOv8, which is multifunctional and can be applied to necessities that incorporate object detection, instance segmentation, and multi-object tracking. 
 ⦁	Compatibility: It is intended to be extensible to different frameworks and can run on any stack from cloud servers down to the edge. 
-⦁	System Architecture
+⦁	**System Architecture**
 The figure depicts the system architecture of the proposed smart parking system. It will be used to affect the automatic control of parking spaces in a parking lot. This is done using OpenCV—a rather popular open-source computer vision library—for capturing image data. It then analyzes the captured image to define parking space. To determine if a given parking space contains a vehicle or not, YOLOv8, an object detection model, is utilized. After the detection of these vehicles, the coordinates of each of them is used to check if the parking space is occupied or free. All this information is stored in the system. The system also incorporates a library known as Pickle to store the data. Real-time data stream (RTSP) is used in streaming real-time data over networks. The system can be employed in informing the users of the number of open spaces that are available in the lot. This information can be presented in a website. In general, the system is useful in enhancing efficiency about the management of parking lots due to its abilities in tracking the occupancy of parking spaces.
 
 **⦁	Implementation**
@@ -86,6 +86,7 @@ To keep the variation of YOLO model at its minimum, Optimize the web server to i
 ⦁	 Security : 
 The web interface together with their data storage and retrieval also requires basic level security for communication and access. 
 These functionalities when incorporated in smart parking project offer an all-round solution when it comes to parking space control and management with computer vision and web technology to offer real time information to the users.
+
 **⦁	References**
 1.	Advanced Smart Parking Management System Development Using A; In Hwan Jung, Jae-Moon Lee and Kitae Hwang; School of Computer Engineering Hansung University,Korea; 2022.
 2.	L. Zhang, J. Huang, X. Li and L. Xiong, "Vision-Based Parking-Slot Detection: A DCNN Based Approach and a Large-Scale Benchmark Dataset," in IEEE Transactions on Image Processing, vol. 27, no. 11, pp. 5350-5364, Nov. 2018.
